@@ -1,29 +1,32 @@
+import React from 'react';
+
 export default function Home() {
   return (
-    <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem', textAlign: 'center', backgroundColor: '#09090b', color: '#fff' }}>
-      <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '1rem' }}>
-        🚀 Next.js 14 SaaS Starter Kit <span style={{ opacity: 0.6 }}>(Free Edition)</span>
-      </h1>
-      <p style={{ maxWidth: '600px', fontSize: '1.125rem', color: '#a1a1aa', marginBottom: '2rem' }}>
-        Production-ready Next.js 14 architecture for solopreneurs. Build and ship fast.
-      </p>
-      
-      <div style={{ background: '#18181b', border: '1px solid #27272a', borderRadius: '12px', padding: '2rem', maxWidth: '500px', width: '100%' }}>
-        <h2 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>Unlock Full Production Features</h2>
-        <ul style={{ textAlign: 'left', color: '#a1a1aa', marginBottom: '1.5rem', lineHeight: '1.8' }}>
-          <li>✅ Complete Auth System</li>
-          <li>✅ Payment Gateway Integration (Stripe / Polar)</li>
-          <li>✅ Database Schemas & Prisma ORM</li>
-          <li>✅ Full Source Code & Commercial License</li>
-        </ul>
-        <a 
-          href="https://gumroad.com/l/sbadzu" 
-          target="_blank" 
-          style={{ display: 'block', background: '#3b82f6', color: '#fff', fontWeight: '600', padding: '0.75rem 1.5rem', borderRadius: '8px', textDecoration: 'none' }}
-        >
-          Get Pro Boilerplate ($49) →
-        </a>
-      </div>
-    </main>
-  )
+    <div style={{ minHeight: '100vh', backgroundColor: '#09090b', color: '#fff', fontFamily: 'sans-serif', padding: '20px' }}>
+      <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 24px', borderBottom: '1px solid #27272a', borderRadius: '8px', backgroundColor: '#18181b' }}>
+        <div style={{ fontWeight: 'bold', fontSize: '18px' }}>🚀 Next.js 14 SaaS Demo</div>
+        <button style={{ padding: '8px 16px', backgroundColor: '#2563eb', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>Dashboard Active</button>
+      </nav>
+      <main style={{ maxWidth: '1000px', margin: '40px auto', display: 'flex', flexDirection: 'column', gap: '24px' }}>
+        <div style={{ backgroundColor: '#18181b', border: '1px solid #27272a', borderRadius: '12px', padding: '24px' }}>
+          <h1 style={{ fontSize: '24px', marginBottom: '8px' }}>Interactive SaaS Dashboard Preview</h1>
+          <p style={{ color: '#a1a1aa', fontSize: '14px' }}>Explore the live layout and components included in this boilerplate.</p>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px' }}>
+          <div style={{ backgroundColor: '#18181b', border: '1px solid #27272a', padding: '20px', borderRadius: '8px' }}>
+            <div style={{ fontSize: '12px', color: '#a1a1aa' }}>Total Revenue</div>
+            <div style={{ fontSize: '24px', fontWeight: 'bold', marginTop: '4px' }}>$12,450.00</div>
+          </div>
+          <div style={{ backgroundColor: '#18181b', border: '1px solid #27272a', padding: '20px', borderRadius: '8px' }}>
+            <div style={{ fontSize: '12px', color: '#a1a1aa' }}>Active Users</div>
+            <div style={{ fontSize: '24px', fontWeight: 'bold', marginTop: '4px' }}>+2,350</div>
+          </div>
+          <div style={{ backgroundColor: '#18181b', border: '1px solid #27272a', padding: '20px', borderRadius: '8px' }}>
+            <div style={{ fontSize: '12px', color: '#a1a1aa' }}>Database Status</div>
+            <div style={{ fontSize: '24px', fontWeight: 'bold', color: '#22c55e', marginTop: '4px' }}>Connected</div>
+          </div>
+        </div>
+      </main>
+    </div>
+  );
 }
