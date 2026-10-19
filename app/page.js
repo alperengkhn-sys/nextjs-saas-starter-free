@@ -1,11 +1,21 @@
+'use client';
 import React from 'react';
 
 export default function Home() {
+  const handleButtonClick = () => {
+    alert('System Status: Dashboard is fully operational!');
+  };
+
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#09090b', color: '#fff', fontFamily: 'sans-serif', padding: '20px' }}>
       <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 24px', borderBottom: '1px solid #27272a', borderRadius: '8px', backgroundColor: '#18181b' }}>
         <div style={{ fontWeight: 'bold', fontSize: '18px' }}>🚀 Next.js 14 SaaS Demo</div>
-        <button style={{ padding: '8px 16px', backgroundColor: '#2563eb', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer' }}>Dashboard Active</button>
+        <button 
+          onClick={handleButtonClick}
+          style={{ padding: '8px 16px', backgroundColor: '#2563eb', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: '500' }}
+        >
+          Dashboard Active
+        </button>
       </nav>
       <main style={{ maxWidth: '1000px', margin: '40px auto', display: 'flex', flexDirection: 'column', gap: '24px' }}>
         <div style={{ backgroundColor: '#18181b', border: '1px solid #27272a', borderRadius: '12px', padding: '24px' }}>
